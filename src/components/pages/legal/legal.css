@@ -1,0 +1,10 @@
+#legal {
+  padding: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#legal h2 {
+  margin-bottom: 20px;
+}

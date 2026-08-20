@@ -1,0 +1,103 @@
+#about {
+  background: var(--gradient);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 50px;
+  padding: 100px 50px;
+
+  @media screen and (max-width: 960px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+#about i {
+  color: var(--secondary);
+}
+
+#about .container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+
+#about .container span {
+  color: var(--secondary);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+#about h2,
+#about p,
+#about li {
+  color: var(--white);
+}
+
+#about ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#about li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#about .testimonials {
+  background: var(--white);
+  box-shadow: inset 0 0 5px black;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+}
+#about .testimonials * {
+  color: var(--black);
+}
+
+#about .testimonials i {
+  font-size: 40px;
+  color: var(--secondary);
+}
+
+#about .testimonials .person {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#about .testimonials .person div {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#about .testimonials .person img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 0 5px var(--shadow);
+}
+
+#about .testimonials .person div .name,
+#about .testimonials .person div .job {
+  font-size: 14px;
+}
+
+#about .testimonials .person div .name {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+#about .testimonials .person div .job {
+  font-style: italic;
+}
